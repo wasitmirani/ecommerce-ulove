@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `wowy`
+-- Database: `uluvmusic`
 --
 
 -- --------------------------------------------------------
@@ -2425,7 +2425,7 @@ CREATE TABLE `ec_store_locators` (
 --
 
 INSERT INTO `ec_store_locators` (`id`, `name`, `email`, `phone`, `address`, `country`, `state`, `city`, `is_primary`, `is_shipping_location`, `created_at`, `updated_at`) VALUES
-(1, 'Wowy', 'sales@botble.com', '18006268', 'North Link Building, 10 Admiralty Street', 'SG', 'Singapore', 'Singapore', 1, 1, '2021-08-24 07:59:33', '2021-08-24 07:59:33');
+(1, 'uluvmusic', 'sales@botble.com', '18006268', 'North Link Building, 10 Admiralty Street', 'SG', 'Singapore', 'Singapore', 1, 1, '2021-08-24 07:59:33', '2021-08-24 07:59:33');
 
 -- --------------------------------------------------------
 
@@ -2983,19 +2983,19 @@ CREATE TABLE `meta_boxes` (
 
 INSERT INTO `meta_boxes` (`id`, `meta_key`, `meta_value`, `reference_id`, `reference_type`, `created_at`, `updated_at`) VALUES
 (1, 'icon', '[\"far fa-star\"]', 1, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
-(2, 'icon', '[\"wowy-font-cpu\"]', 2, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
-(3, 'icon', '[\"wowy-font-tshirt\"]', 11, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
-(4, 'icon', '[\"wowy-font-desktop\"]', 12, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
-(5, 'icon', '[\"wowy-font-home\"]', 17, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
-(6, 'icon', '[\"wowy-font-dress\"]', 18, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
-(7, 'icon', '[\"wowy-font-diamond\"]', 19, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
+(2, 'icon', '[\"uluvmusic-font-cpu\"]', 2, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
+(3, 'icon', '[\"uluvmusic-font-tshirt\"]', 11, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
+(4, 'icon', '[\"uluvmusic-font-desktop\"]', 12, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
+(5, 'icon', '[\"uluvmusic-font-home\"]', 17, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
+(6, 'icon', '[\"uluvmusic-font-dress\"]', 18, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
+(7, 'icon', '[\"uluvmusic-font-diamond\"]', 19, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
 (8, 'icon', '[\"far fa-microchip\"]', 20, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
-(9, 'icon', '[\"wowy-font-smartphone\"]', 25, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
-(10, 'icon', '[\"wowy-font-teddy-bear\"]', 26, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
-(11, 'icon', '[\"wowy-font-kite\"]', 27, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
+(9, 'icon', '[\"uluvmusic-font-smartphone\"]', 25, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
+(10, 'icon', '[\"uluvmusic-font-teddy-bear\"]', 26, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
+(11, 'icon', '[\"uluvmusic-font-kite\"]', 27, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
 (12, 'icon', '[\"far fa-book\"]', 28, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
 (13, 'icon', '[\"far fa-car\"]', 29, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
-(14, 'icon', '[\"wowy-font-home\"]', 30, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
+(14, 'icon', '[\"uluvmusic-font-home\"]', 30, 'Botble\\Ecommerce\\Models\\ProductCategory', '2021-08-24 07:56:33', '2021-08-24 07:56:33'),
 (18, 'layout', '[\"product-right-sidebar\"]', 1, 'Botble\\Ecommerce\\Models\\Product', '2021-08-24 07:59:23', '2021-08-24 07:59:23'),
 (19, 'layout', '[\"product-left-sidebar\"]', 2, 'Botble\\Ecommerce\\Models\\Product', '2021-08-24 07:59:23', '2021-08-24 07:59:23'),
 (20, 'layout', '[\"product-full-width\"]', 3, 'Botble\\Ecommerce\\Models\\Product', '2021-08-24 07:59:23', '2021-08-24 07:59:23'),
@@ -3615,13 +3615,13 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `key`, `value`, `created_at`, `updated_at`) VALUES
-(1, 'theme', 'wowy', NULL, NULL),
+(1, 'theme', 'uluvmusic', NULL, NULL),
 (2, 'activated_plugins', '[\"language\",\"analytics\",\"audit-log\",\"backup\",\"blog\",\"captcha\",\"contact\",\"cookie-consent\",\"ecommerce\",\"language-advanced\",\"mollie\",\"newsletter\",\"payment\",\"paystack\",\"razorpay\",\"simple-slider\",\"social-login\",\"sslcommerz\",\"translation\",\"ads\"]', NULL, NULL),
 (9, 'language_hide_default', '1', NULL, NULL),
 (10, 'language_switcher_display', 'dropdown', NULL, NULL),
 (11, 'language_display', 'all', NULL, NULL),
 (12, 'language_hide_languages', '[]', NULL, NULL),
-(13, 'ecommerce_store_name', 'Wowy', NULL, NULL),
+(13, 'ecommerce_store_name', 'uluvmusic', NULL, NULL),
 (14, 'ecommerce_store_phone', '18006268', NULL, NULL),
 (15, 'ecommerce_store_address', 'North Link Building, 10 Admiralty Street', NULL, NULL),
 (16, 'ecommerce_store_state', 'Singapore', NULL, NULL),
@@ -3640,36 +3640,36 @@ INSERT INTO `settings` (`id`, `key`, `value`, `created_at`, `updated_at`) VALUES
 (29, 'sale_popup_display_pages', '[\"public.index\"]', NULL, NULL),
 (30, 'admin_favicon', 'general/favicon.png', NULL, NULL),
 (31, 'admin_logo', 'general/logo-light.png', NULL, NULL),
-(32, 'theme-wowy-site_title', 'Wowy - Laravel Multipurpose eCommerce Script', NULL, NULL),
-(33, 'theme-wowy-copyright', 'Copyright © 2021 Wowy all rights reserved. Powered by Botble.', NULL, NULL),
-(34, 'theme-wowy-favicon', 'general/favicon.png', NULL, NULL),
-(35, 'theme-wowy-logo', 'general/logo.png', NULL, NULL),
-(36, 'theme-wowy-logo_light', 'general/logo-light.png', NULL, NULL),
-(37, 'theme-wowy-seo_og_image', 'general/open-graph-image.png', NULL, NULL),
-(38, 'theme-wowy-address', '562 Wellington Road, Street 32, San Francisco', NULL, NULL),
-(39, 'theme-wowy-hotline', '1900 - 888', NULL, NULL),
-(40, 'theme-wowy-phone', '+01 2222 365 /(+91) 01 2345 6789', NULL, NULL),
-(41, 'theme-wowy-working_hours', '10:00 - 18:00, Mon - Sat', NULL, NULL),
-(42, 'theme-wowy-homepage_id', '1', NULL, NULL),
-(43, 'theme-wowy-blog_page_id', '5', NULL, NULL),
-(44, 'theme-wowy-cookie_consent_message', 'Your experience on this site will be improved by allowing cookies ', NULL, NULL),
-(45, 'theme-wowy-cookie_consent_learn_more_url', 'http://wowy.local/cookie-policy', NULL, NULL),
-(46, 'theme-wowy-cookie_consent_learn_more_text', 'Cookie Policy', NULL, NULL),
-(47, 'theme-wowy-payment_methods', 'general/payment-methods.png', NULL, NULL),
-(48, 'theme-wowy-number_of_cross_sale_products_in_cart_page', '4', NULL, NULL),
-(50, 'theme-wowy-social_links', '[[{\"key\":\"social-name\",\"value\":\"Facebook\"},{\"key\":\"social-icon\",\"value\":\"fab fa-facebook-f\"},{\"key\":\"social-url\",\"value\":\"https:\\/\\/www.facebook.com\\/\"},{\"key\":\"social-color\",\"value\":\"#3b5999\"}],[{\"key\":\"social-name\",\"value\":\"Twitter\"},{\"key\":\"social-icon\",\"value\":\"fab fa-twitter\"},{\"key\":\"social-url\",\"value\":\"https:\\/\\/www.twitter.com\\/\"},{\"key\":\"social-color\",\"value\":\"#55ACF9\"}],[{\"key\":\"social-name\",\"value\":\"Instagram\"},{\"key\":\"social-icon\",\"value\":\"fab fa-instagram\"},{\"key\":\"social-url\",\"value\":\"https:\\/\\/www.instagram.com\\/\"},{\"key\":\"social-color\",\"value\":\"#E1306C\"}],[{\"key\":\"social-name\",\"value\":\"Linkedin\"},{\"key\":\"social-icon\",\"value\":\"fab fa-linkedin\"},{\"key\":\"social-url\",\"value\":\"https:\\/\\/www.linkedin.com\\/\"},{\"key\":\"social-color\",\"value\":\"#007bb6\"}],[{\"key\":\"social-name\",\"value\":\"Pinterest\"},{\"key\":\"social-icon\",\"value\":\"fab fa-pinterest\"},{\"key\":\"social-url\",\"value\":\"https:\\/\\/www.pinterest.com\\/\"},{\"key\":\"social-color\",\"value\":\"#cb2027\"}]]', NULL, NULL),
-(51, 'theme-wowy-header_messages', '[[{\"key\":\"icon\",\"value\":\"fa fa-bell\"},{\"key\":\"message\",\"value\":\"<b class=\\\"text-success\\\"> Trendy 25<\\/b> silver jewelry, save up 35% off today\"},{\"key\":\"link\",\"value\":\"\\/products\"},{\"key\":\"link_text\",\"value\":\"Shop now\"}],[{\"key\":\"icon\",\"value\":\"fa fa-asterisk\"},{\"key\":\"message\",\"value\":\"<b class=\\\"text-danger\\\">Supper Value Deals<\\/b> - Save more with coupons\"},{\"key\":\"link\",\"value\":null},{\"key\":\"link_text\",\"value\":null}],[{\"key\":\"icon\",\"value\":\"fa fa-angle-double-right\"},{\"key\":\"message\",\"value\":\"Get great devices up to 50% off\"},{\"key\":\"link\",\"value\":\"\\/products\"},{\"key\":\"link_text\",\"value\":\"View details\"}]]', NULL, NULL),
-(52, 'theme-wowy-contact_info_boxes', '[[{\"key\":\"name\",\"value\":\"Head Office\"},{\"key\":\"address\",\"value\":\"205 North Michigan Avenue, Suite 810, Chicago, 60601, USA\"},{\"key\":\"phone\",\"value\":\"(+01) 234 567\"},{\"key\":\"email\",\"value\":\"office@botble.com\"}],[{\"key\":\"name\",\"value\":\"Our Studio\"},{\"key\":\"address\",\"value\":\"205 North Michigan Avenue, Suite 810, Chicago, 60601, USA\"},{\"key\":\"phone\",\"value\":\"(+01) 234 567\"},{\"key\":\"email\",\"value\":\"studio@botble.com\"}],[{\"key\":\"name\",\"value\":\"Our Shop\"},{\"key\":\"address\",\"value\":\"205 North Michigan Avenue, Suite 810, Chicago, 60601, USA\"},{\"key\":\"phone\",\"value\":\"(+01) 234 567\"},{\"key\":\"email\",\"value\":\"shop@botble.com\"}]]', NULL, NULL),
-(53, 'theme-wowy-vi-font_text', 'Roboto Condensed', NULL, NULL),
-(54, 'theme-wowy-vi-copyright', 'Bản quyền © 2021 Wowy tất cả quyền đã được bảo hộ. Phát triển bởi Botble.', NULL, NULL),
-(55, 'theme-wowy-vi-working_hours', '10:00 - 18:00, Thứ Hai - Thứ Bảy', NULL, NULL),
-(56, 'theme-wowy-vi-cookie_consent_message', 'Trải nghiệm của bạn trên trang web này sẽ được cải thiện bằng cách cho phép cookie ', NULL, NULL),
-(57, 'theme-wowy-vi-cookie_consent_learn_more_url', 'http://wowy.local/cookie-policy', NULL, NULL),
-(58, 'theme-wowy-vi-cookie_consent_learn_more_text', 'Chính sách cookie', NULL, NULL),
-(59, 'theme-wowy-vi-homepage_id', '14', NULL, NULL),
-(60, 'theme-wowy-vi-blog_page_id', '18', NULL, NULL),
-(61, 'theme-wowy-vi-header_messages', '[[{\"key\":\"icon\",\"value\":\"fa fa-bell\"},{\"key\":\"message\",\"value\":\"<b class=\\\"text-success\\\">Trang s\\u1ee9c b\\u1ea1c 25 <\\/b> th\\u1eddi th\\u01b0\\u1ee3ng, ti\\u1ebft ki\\u1ec7m \\u0111\\u1ebfn 35%\"},{\"key\":\"link\",\"value\":\"\\/products\"},{\"key\":\"link_text\",\"value\":\"Mua ngay\"}],[{\"key\":\"icon\",\"value\":\"fa fa-asterisk\"},{\"key\":\"message\",\"value\":\"<b class=\\\"text-danger\\\">\\u01afu \\u0111\\u00e3i si\\u00eau gi\\u00e1 tr\\u1ecb <\\/b> - Ti\\u1ebft ki\\u1ec7m h\\u01a1n v\\u1edbi phi\\u1ebfu th\\u01b0\\u1edfng\"},{\"key\":\"link\",\"value\":null},{\"key\":\"link_text\",\"value\":null}],[{\"key\":\"icon\",\"value\":\"fa fa-angle-double-right\"},{\"key\":\"message\",\"value\":\"Nh\\u1eadn c\\u00e1c s\\u1ea3n ph\\u1ea9m tuy\\u1ec7t v\\u1eddi gi\\u1ea3m gi\\u00e1 t\\u1edbi 50%\"},{\"key\":\"link\",\"value\":\"\\/products\"},{\"key\":\"link_text\",\"value\":\"Xem chi ti\\u1ebft\"}]]', NULL, NULL),
-(62, 'theme-wowy-vi-contact_info_boxes', '[[{\"key\":\"name\",\"value\":\"Tr\\u1ee5 s\\u1edf ch\\u00ednh\"},{\"key\":\"address\",\"value\":\"205 North Michigan Avenue, Suite 810, Chicago, 60601, USA\"},{\"key\":\"phone\",\"value\":\"(+01) 234 567\"},{\"key\":\"email\",\"value\":\"office@botble.com\"}],[{\"key\":\"name\",\"value\":\"Gian h\\u00e0ng tr\\u01b0ng b\\u00e0y\"},{\"key\":\"address\",\"value\":\"205 North Michigan Avenue, Suite 810, Chicago, 60601, USA\"},{\"key\":\"phone\",\"value\":\"(+01) 234 567\"},{\"key\":\"email\",\"value\":\"studio@botble.com\"}],[{\"key\":\"name\",\"value\":\"C\\u1eeda h\\u00e0ng\"},{\"key\":\"address\",\"value\":\"205 North Michigan Avenue, Suite 810, Chicago, 60601, USA\"},{\"key\":\"phone\",\"value\":\"(+01) 234 567\"},{\"key\":\"email\",\"value\":\"shop@botble.com\"}]]', NULL, NULL);
+(32, 'theme-uluvmusic-site_title', 'uluvmusic - Laravel Multipurpose eCommerce Script', NULL, NULL),
+(33, 'theme-uluvmusic-copyright', 'Copyright © 2021 uluvmusic all rights reserved. Powered by Botble.', NULL, NULL),
+(34, 'theme-uluvmusic-favicon', 'general/favicon.png', NULL, NULL),
+(35, 'theme-uluvmusic-logo', 'general/logo.png', NULL, NULL),
+(36, 'theme-uluvmusic-logo_light', 'general/logo-light.png', NULL, NULL),
+(37, 'theme-uluvmusic-seo_og_image', 'general/open-graph-image.png', NULL, NULL),
+(38, 'theme-uluvmusic-address', '562 Wellington Road, Street 32, San Francisco', NULL, NULL),
+(39, 'theme-uluvmusic-hotline', '1900 - 888', NULL, NULL),
+(40, 'theme-uluvmusic-phone', '+01 2222 365 /(+91) 01 2345 6789', NULL, NULL),
+(41, 'theme-uluvmusic-working_hours', '10:00 - 18:00, Mon - Sat', NULL, NULL),
+(42, 'theme-uluvmusic-homepage_id', '1', NULL, NULL),
+(43, 'theme-uluvmusic-blog_page_id', '5', NULL, NULL),
+(44, 'theme-uluvmusic-cookie_consent_message', 'Your experience on this site will be improved by allowing cookies ', NULL, NULL),
+(45, 'theme-uluvmusic-cookie_consent_learn_more_url', 'http://uluvmusic.local/cookie-policy', NULL, NULL),
+(46, 'theme-uluvmusic-cookie_consent_learn_more_text', 'Cookie Policy', NULL, NULL),
+(47, 'theme-uluvmusic-payment_methods', 'general/payment-methods.png', NULL, NULL),
+(48, 'theme-uluvmusic-number_of_cross_sale_products_in_cart_page', '4', NULL, NULL),
+(50, 'theme-uluvmusic-social_links', '[[{\"key\":\"social-name\",\"value\":\"Facebook\"},{\"key\":\"social-icon\",\"value\":\"fab fa-facebook-f\"},{\"key\":\"social-url\",\"value\":\"https:\\/\\/www.facebook.com\\/\"},{\"key\":\"social-color\",\"value\":\"#3b5999\"}],[{\"key\":\"social-name\",\"value\":\"Twitter\"},{\"key\":\"social-icon\",\"value\":\"fab fa-twitter\"},{\"key\":\"social-url\",\"value\":\"https:\\/\\/www.twitter.com\\/\"},{\"key\":\"social-color\",\"value\":\"#55ACF9\"}],[{\"key\":\"social-name\",\"value\":\"Instagram\"},{\"key\":\"social-icon\",\"value\":\"fab fa-instagram\"},{\"key\":\"social-url\",\"value\":\"https:\\/\\/www.instagram.com\\/\"},{\"key\":\"social-color\",\"value\":\"#E1306C\"}],[{\"key\":\"social-name\",\"value\":\"Linkedin\"},{\"key\":\"social-icon\",\"value\":\"fab fa-linkedin\"},{\"key\":\"social-url\",\"value\":\"https:\\/\\/www.linkedin.com\\/\"},{\"key\":\"social-color\",\"value\":\"#007bb6\"}],[{\"key\":\"social-name\",\"value\":\"Pinterest\"},{\"key\":\"social-icon\",\"value\":\"fab fa-pinterest\"},{\"key\":\"social-url\",\"value\":\"https:\\/\\/www.pinterest.com\\/\"},{\"key\":\"social-color\",\"value\":\"#cb2027\"}]]', NULL, NULL),
+(51, 'theme-uluvmusic-header_messages', '[[{\"key\":\"icon\",\"value\":\"fa fa-bell\"},{\"key\":\"message\",\"value\":\"<b class=\\\"text-success\\\"> Trendy 25<\\/b> silver jewelry, save up 35% off today\"},{\"key\":\"link\",\"value\":\"\\/products\"},{\"key\":\"link_text\",\"value\":\"Shop now\"}],[{\"key\":\"icon\",\"value\":\"fa fa-asterisk\"},{\"key\":\"message\",\"value\":\"<b class=\\\"text-danger\\\">Supper Value Deals<\\/b> - Save more with coupons\"},{\"key\":\"link\",\"value\":null},{\"key\":\"link_text\",\"value\":null}],[{\"key\":\"icon\",\"value\":\"fa fa-angle-double-right\"},{\"key\":\"message\",\"value\":\"Get great devices up to 50% off\"},{\"key\":\"link\",\"value\":\"\\/products\"},{\"key\":\"link_text\",\"value\":\"View details\"}]]', NULL, NULL),
+(52, 'theme-uluvmusic-contact_info_boxes', '[[{\"key\":\"name\",\"value\":\"Head Office\"},{\"key\":\"address\",\"value\":\"205 North Michigan Avenue, Suite 810, Chicago, 60601, USA\"},{\"key\":\"phone\",\"value\":\"(+01) 234 567\"},{\"key\":\"email\",\"value\":\"office@botble.com\"}],[{\"key\":\"name\",\"value\":\"Our Studio\"},{\"key\":\"address\",\"value\":\"205 North Michigan Avenue, Suite 810, Chicago, 60601, USA\"},{\"key\":\"phone\",\"value\":\"(+01) 234 567\"},{\"key\":\"email\",\"value\":\"studio@botble.com\"}],[{\"key\":\"name\",\"value\":\"Our Shop\"},{\"key\":\"address\",\"value\":\"205 North Michigan Avenue, Suite 810, Chicago, 60601, USA\"},{\"key\":\"phone\",\"value\":\"(+01) 234 567\"},{\"key\":\"email\",\"value\":\"shop@botble.com\"}]]', NULL, NULL),
+(53, 'theme-uluvmusic-vi-font_text', 'Roboto Condensed', NULL, NULL),
+(54, 'theme-uluvmusic-vi-copyright', 'Bản quyền © 2021 uluvmusic tất cả quyền đã được bảo hộ. Phát triển bởi Botble.', NULL, NULL),
+(55, 'theme-uluvmusic-vi-working_hours', '10:00 - 18:00, Thứ Hai - Thứ Bảy', NULL, NULL),
+(56, 'theme-uluvmusic-vi-cookie_consent_message', 'Trải nghiệm của bạn trên trang web này sẽ được cải thiện bằng cách cho phép cookie ', NULL, NULL),
+(57, 'theme-uluvmusic-vi-cookie_consent_learn_more_url', 'http://uluvmusic.local/cookie-policy', NULL, NULL),
+(58, 'theme-uluvmusic-vi-cookie_consent_learn_more_text', 'Chính sách cookie', NULL, NULL),
+(59, 'theme-uluvmusic-vi-homepage_id', '14', NULL, NULL),
+(60, 'theme-uluvmusic-vi-blog_page_id', '18', NULL, NULL),
+(61, 'theme-uluvmusic-vi-header_messages', '[[{\"key\":\"icon\",\"value\":\"fa fa-bell\"},{\"key\":\"message\",\"value\":\"<b class=\\\"text-success\\\">Trang s\\u1ee9c b\\u1ea1c 25 <\\/b> th\\u1eddi th\\u01b0\\u1ee3ng, ti\\u1ebft ki\\u1ec7m \\u0111\\u1ebfn 35%\"},{\"key\":\"link\",\"value\":\"\\/products\"},{\"key\":\"link_text\",\"value\":\"Mua ngay\"}],[{\"key\":\"icon\",\"value\":\"fa fa-asterisk\"},{\"key\":\"message\",\"value\":\"<b class=\\\"text-danger\\\">\\u01afu \\u0111\\u00e3i si\\u00eau gi\\u00e1 tr\\u1ecb <\\/b> - Ti\\u1ebft ki\\u1ec7m h\\u01a1n v\\u1edbi phi\\u1ebfu th\\u01b0\\u1edfng\"},{\"key\":\"link\",\"value\":null},{\"key\":\"link_text\",\"value\":null}],[{\"key\":\"icon\",\"value\":\"fa fa-angle-double-right\"},{\"key\":\"message\",\"value\":\"Nh\\u1eadn c\\u00e1c s\\u1ea3n ph\\u1ea9m tuy\\u1ec7t v\\u1eddi gi\\u1ea3m gi\\u00e1 t\\u1edbi 50%\"},{\"key\":\"link\",\"value\":\"\\/products\"},{\"key\":\"link_text\",\"value\":\"Xem chi ti\\u1ebft\"}]]', NULL, NULL),
+(62, 'theme-uluvmusic-vi-contact_info_boxes', '[[{\"key\":\"name\",\"value\":\"Tr\\u1ee5 s\\u1edf ch\\u00ednh\"},{\"key\":\"address\",\"value\":\"205 North Michigan Avenue, Suite 810, Chicago, 60601, USA\"},{\"key\":\"phone\",\"value\":\"(+01) 234 567\"},{\"key\":\"email\",\"value\":\"office@botble.com\"}],[{\"key\":\"name\",\"value\":\"Gian h\\u00e0ng tr\\u01b0ng b\\u00e0y\"},{\"key\":\"address\",\"value\":\"205 North Michigan Avenue, Suite 810, Chicago, 60601, USA\"},{\"key\":\"phone\",\"value\":\"(+01) 234 567\"},{\"key\":\"email\",\"value\":\"studio@botble.com\"}],[{\"key\":\"name\",\"value\":\"C\\u1eeda h\\u00e0ng\"},{\"key\":\"address\",\"value\":\"205 North Michigan Avenue, Suite 810, Chicago, 60601, USA\"},{\"key\":\"phone\",\"value\":\"(+01) 234 567\"},{\"key\":\"email\",\"value\":\"shop@botble.com\"}]]', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -4433,7 +4433,7 @@ INSERT INTO `translations` (`id`, `status`, `locale`, `group`, `key`, `value`, `
 (474, 1, 'en', 'core/base/errors', '500_title', 'Page could not be loaded', '2021-08-24 08:01:00', '2021-08-24 08:01:00'),
 (475, 1, 'en', 'core/base/errors', '500_msg', '<li>The page you requested does not exist.</li>\n	                <li>The link you clicked is no longer.</li>\n	                <li>The page may have moved to a new location.</li>\n	                <li>An error may have occurred.</li>\n	                <li>You are not authorized to view the requested resource.</li>', '2021-08-24 08:01:00', '2021-08-24 08:01:00'),
 (476, 1, 'en', 'core/base/errors', 'reasons', 'This may have occurred because of several reasons', '2021-08-24 08:01:00', '2021-08-24 08:01:00'),
-(477, 1, 'en', 'core/base/errors', 'try_again', 'Please try again in a few minutes, or alternatively return to the homepage by <a href=\"http://wowy.local/admin\">clicking here</a>.', '2021-08-24 08:01:00', '2021-08-24 08:01:00'),
+(477, 1, 'en', 'core/base/errors', 'try_again', 'Please try again in a few minutes, or alternatively return to the homepage by <a href=\"http://uluvmusic.local/admin\">clicking here</a>.', '2021-08-24 08:01:00', '2021-08-24 08:01:00'),
 (478, 1, 'en', 'core/base/errors', 'not_found', 'Not Found', '2021-08-24 08:01:00', '2021-08-24 08:01:00'),
 (479, 1, 'en', 'core/base/forms', 'choose_image', 'Choose image', '2021-08-24 08:01:00', '2021-08-24 08:01:00'),
 (480, 1, 'en', 'core/base/forms', 'actions', 'Actions', '2021-08-24 08:01:00', '2021-08-24 08:01:00'),
@@ -7807,26 +7807,26 @@ CREATE TABLE `widgets` (
 --
 
 INSERT INTO `widgets` (`id`, `widget_id`, `sidebar_id`, `theme`, `position`, `data`, `created_at`, `updated_at`) VALUES
-(1, 'SiteInfoWidget', 'footer_sidebar', 'wowy', 0, '{\"id\":\"SiteInfoWidget\",\"name\":\"Site information\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(2, 'CustomMenuWidget', 'footer_sidebar', 'wowy', 1, '{\"id\":\"CustomMenuWidget\",\"name\":\"Categories\",\"menu_id\":\"product-categories\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(3, 'CustomMenuWidget', 'footer_sidebar', 'wowy', 2, '{\"id\":\"CustomMenuWidget\",\"name\":\"Information\",\"menu_id\":\"information\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(4, 'BlogSearchWidget', 'primary_sidebar', 'wowy', 0, '{\"id\":\"BlogSearchWidget\",\"name\":\"Search\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(5, 'BlogCategoriesWidget', 'primary_sidebar', 'wowy', 1, '{\"id\":\"BlogCategoriesWidget\",\"name\":\"Categories\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(6, 'RecentPostsWidget', 'primary_sidebar', 'wowy', 2, '{\"id\":\"RecentPostsWidget\",\"name\":\"Recent Posts\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(7, 'TagsWidget', 'primary_sidebar', 'wowy', 4, '{\"id\":\"TagsWidget\",\"name\":\"Popular Tags\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(8, 'ProductCategoriesWidget', 'product_sidebar', 'wowy', 1, '{\"id\":\"ProductCategoriesWidget\",\"name\":\"Categories\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(9, 'FeaturedProductsWidget', 'product_sidebar', 'wowy', 2, '{\"id\":\"FeaturedProductsWidget\",\"name\":\"Featured Products\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(10, 'FeaturedBrandsWidget', 'product_sidebar', 'wowy', 3, '{\"id\":\"FeaturedBrandsWidget\",\"name\":\"Manufacturers\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(11, 'SiteInfoWidget', 'footer_sidebar', 'wowy-vi', 0, '{\"id\":\"SiteInfoWidget\",\"name\":\"V\\u1ec1 ch\\u00fang t\\u00f4i\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(12, 'CustomMenuWidget', 'footer_sidebar', 'wowy-vi', 1, '{\"id\":\"CustomMenuWidget\",\"name\":\"Danh m\\u1ee5c s\\u1ea3n ph\\u1ea9m\",\"menu_id\":\"danh-muc-san-pham\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(13, 'CustomMenuWidget', 'footer_sidebar', 'wowy-vi', 2, '{\"id\":\"CustomMenuWidget\",\"name\":\"Th\\u00f4ng tin\",\"menu_id\":\"thong-tin\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(14, 'BlogSearchWidget', 'primary_sidebar', 'wowy-vi', 0, '{\"id\":\"BlogSearchWidget\",\"name\":\"T\\u00ecm ki\\u1ebfm\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(15, 'BlogCategoriesWidget', 'primary_sidebar', 'wowy-vi', 1, '{\"id\":\"BlogCategoriesWidget\",\"name\":\"Danh m\\u1ee5c\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(16, 'RecentPostsWidget', 'primary_sidebar', 'wowy-vi', 2, '{\"id\":\"RecentPostsWidget\",\"name\":\"B\\u00e0i vi\\u1ebft g\\u1ea7n \\u0111\\u00e2y\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(17, 'TagsWidget', 'primary_sidebar', 'wowy-vi', 4, '{\"id\":\"TagsWidget\",\"name\":\"Tags ph\\u1ed5 bi\\u1ebfn\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(18, 'ProductCategoriesWidget', 'product_sidebar', 'wowy-vi', 1, '{\"id\":\"ProductCategoriesWidget\",\"name\":\"Danh m\\u1ee5c s\\u1ea3n ph\\u1ea9m\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(19, 'FeaturedProductsWidget', 'product_sidebar', 'wowy-vi', 2, '{\"id\":\"FeaturedProductsWidget\",\"name\":\"S\\u1ea3n ph\\u1ea9m n\\u1ed5i b\\u1eadt\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
-(20, 'FeaturedBrandsWidget', 'product_sidebar', 'wowy-vi', 3, '{\"id\":\"FeaturedBrandsWidget\",\"name\":\"Nh\\u00e0 cung c\\u1ea5p\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33');
+(1, 'SiteInfoWidget', 'footer_sidebar', 'uluvmusic', 0, '{\"id\":\"SiteInfoWidget\",\"name\":\"Site information\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(2, 'CustomMenuWidget', 'footer_sidebar', 'uluvmusic', 1, '{\"id\":\"CustomMenuWidget\",\"name\":\"Categories\",\"menu_id\":\"product-categories\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(3, 'CustomMenuWidget', 'footer_sidebar', 'uluvmusic', 2, '{\"id\":\"CustomMenuWidget\",\"name\":\"Information\",\"menu_id\":\"information\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(4, 'BlogSearchWidget', 'primary_sidebar', 'uluvmusic', 0, '{\"id\":\"BlogSearchWidget\",\"name\":\"Search\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(5, 'BlogCategoriesWidget', 'primary_sidebar', 'uluvmusic', 1, '{\"id\":\"BlogCategoriesWidget\",\"name\":\"Categories\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(6, 'RecentPostsWidget', 'primary_sidebar', 'uluvmusic', 2, '{\"id\":\"RecentPostsWidget\",\"name\":\"Recent Posts\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(7, 'TagsWidget', 'primary_sidebar', 'uluvmusic', 4, '{\"id\":\"TagsWidget\",\"name\":\"Popular Tags\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(8, 'ProductCategoriesWidget', 'product_sidebar', 'uluvmusic', 1, '{\"id\":\"ProductCategoriesWidget\",\"name\":\"Categories\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(9, 'FeaturedProductsWidget', 'product_sidebar', 'uluvmusic', 2, '{\"id\":\"FeaturedProductsWidget\",\"name\":\"Featured Products\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(10, 'FeaturedBrandsWidget', 'product_sidebar', 'uluvmusic', 3, '{\"id\":\"FeaturedBrandsWidget\",\"name\":\"Manufacturers\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(11, 'SiteInfoWidget', 'footer_sidebar', 'uluvmusic-vi', 0, '{\"id\":\"SiteInfoWidget\",\"name\":\"V\\u1ec1 ch\\u00fang t\\u00f4i\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(12, 'CustomMenuWidget', 'footer_sidebar', 'uluvmusic-vi', 1, '{\"id\":\"CustomMenuWidget\",\"name\":\"Danh m\\u1ee5c s\\u1ea3n ph\\u1ea9m\",\"menu_id\":\"danh-muc-san-pham\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(13, 'CustomMenuWidget', 'footer_sidebar', 'uluvmusic-vi', 2, '{\"id\":\"CustomMenuWidget\",\"name\":\"Th\\u00f4ng tin\",\"menu_id\":\"thong-tin\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(14, 'BlogSearchWidget', 'primary_sidebar', 'uluvmusic-vi', 0, '{\"id\":\"BlogSearchWidget\",\"name\":\"T\\u00ecm ki\\u1ebfm\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(15, 'BlogCategoriesWidget', 'primary_sidebar', 'uluvmusic-vi', 1, '{\"id\":\"BlogCategoriesWidget\",\"name\":\"Danh m\\u1ee5c\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(16, 'RecentPostsWidget', 'primary_sidebar', 'uluvmusic-vi', 2, '{\"id\":\"RecentPostsWidget\",\"name\":\"B\\u00e0i vi\\u1ebft g\\u1ea7n \\u0111\\u00e2y\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(17, 'TagsWidget', 'primary_sidebar', 'uluvmusic-vi', 4, '{\"id\":\"TagsWidget\",\"name\":\"Tags ph\\u1ed5 bi\\u1ebfn\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(18, 'ProductCategoriesWidget', 'product_sidebar', 'uluvmusic-vi', 1, '{\"id\":\"ProductCategoriesWidget\",\"name\":\"Danh m\\u1ee5c s\\u1ea3n ph\\u1ea9m\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(19, 'FeaturedProductsWidget', 'product_sidebar', 'uluvmusic-vi', 2, '{\"id\":\"FeaturedProductsWidget\",\"name\":\"S\\u1ea3n ph\\u1ea9m n\\u1ed5i b\\u1eadt\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33'),
+(20, 'FeaturedBrandsWidget', 'product_sidebar', 'uluvmusic-vi', 3, '{\"id\":\"FeaturedBrandsWidget\",\"name\":\"Nh\\u00e0 cung c\\u1ea5p\"}', '2021-08-24 08:00:33', '2021-08-24 08:00:33');
 
 --
 -- Indexes for dumped tables

@@ -1,18 +1,18 @@
     @if (is_plugin_active('newsletter'))
         {!! do_shortcode('[newsletter-form title="' . __('Sign up to Newsletter') . '" description="' . __('...and receive $25 coupon for first shopping.') . '"][/newsletter-form]') !!}
     @endif
-    <footer class="main">
+     <footer class="main" style="color:white; background-color:black;">
         <section class="section-padding-60">
             <div class="container">
                 <div class="row">
                     {!! dynamic_sidebar('footer_sidebar') !!}
                     @if (theme_option('payment_methods'))
                         <div class="col-lg-4">
-                            <h5 class="widget-title mb-30 wow fadeIn animated">{{ __('Payments') }}</h5>
+                            <h5 class="widget-title mb-30 wow fadeIn animated text-light">{{ __('Payments') }}</h5>
                             <div class="row">
                                 <div class="col-md-4 col-lg-12">
                                     <p class="mb-20 wow fadeIn animated mt-md-3">{{ __('Secured Payment Gateways') }}</p>
-                                    <img class="wow fadeIn animated" src="{{ RvMedia::getImageUrl(theme_option('payment_methods')) }}" alt="{{ __('Payment methods') }}">
+                                    <img class="wow fadeIn animated" src="{{ asset('assets/payment-methods.png')}}" alt="{{ __('Payment methods') }}">
                                 </div>
                             </div>
                         </div>
@@ -20,7 +20,20 @@
                 </div>
             </div>
         </section>
-        <div class="container pb-20 wow fadeIn animated">
+        <div class="footer-down">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p>{{ theme_option('copyright') }}</p>
+              <ul class="copyright-ul">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+        {{-- <div class="container pb-20 wow fadeIn animated">
             <div class="row">
                 <div class="col-12 mb-20">
                     <div class="footer-bottom"></div>
@@ -34,19 +47,19 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </footer>
 
     @if (theme_option('preloader_enabled', 'yes') == 'yes')
         <!-- Preloader Start -->
-        <div id="preloader-active">
-            <div class="preloader d-flex align-items-center justify-content-center">
+        <div id="preloader-active" >
+            <div class="preloader d-flex align-items-center justify-content-center" style="background-color: black">
                 <div class="preloader-inner position-relative">
                     <div class="text-center">
                         @if (theme_option('favicon'))
                             <img class="jump" src="{{ RvMedia::getImageUrl(theme_option('favicon')) }}" alt="logo">
                         @endif
-                        <h5 class="mb-5">{{ __('Now Loading') }}</h5>
+                        <h5 class="mb-5 text-light">{{ __('Loading....') }}</h5>
                         <div class="loader">
                             <div class="bar bar1"></div>
                             <div class="bar bar2"></div>
@@ -122,5 +135,14 @@
                 });
             </script>
         @endif
+ <script src="{{asset('assets/slick-slider/slick/slick.min.js')}}"></script>
+
+    <script src="{{asset('assets/js/custom.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+    AOS.init();
+    </script>
     </body>
 </html>

@@ -1,8 +1,10 @@
 {!! Theme::partial('header') !!}
-  <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-    <link href="assets/slick-slider/slick/slick-theme.css" rel="stylesheet">
-    <link href="assets/slick-slider/slick/slick.css" rel="stylesheet">
+
+    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/responsive.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/slick-slider/slick/slick-theme.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/slick-slider/slick/slick.css')}}" rel="stylesheet">
+
 <main class="main">
    <section class="banner" >
       <div class="container">
@@ -103,6 +105,7 @@
         </div>
       </div>
     </section>
+    {{       Html::tag('div', '[product-category-products category_id="17"][/product-category-products]')}}
     <section class="section-4">
       <div class="container">
         <div class="row">
@@ -614,4 +617,7 @@
 </main>
 
 {!! Theme::partial('footer') !!}
+
+
+
 

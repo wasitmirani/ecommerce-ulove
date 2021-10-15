@@ -2,7 +2,7 @@
     "name": "Language Advanced",
     "namespace": "Botble\\LanguageAdvanced\\",
     "provider": "Botble\\LanguageAdvanced\\Providers\\LanguageAdvancedServiceProvider",
-    "author": "Botble Technologies",
+    "author": "",
     "url": "https://botble.com",
     "version": "1.1",
     "description": "Advanced Multi-language"

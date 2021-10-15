@@ -36,7 +36,7 @@ class ThemeOptionSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'theme-' . $theme . '-site_title',
-                'value' => 'Wowy - Laravel Multipurpose eCommerce Script',
+                'value' => '',
             ],
             [
                 'key'   => 'theme-' . $theme . '-copyright',

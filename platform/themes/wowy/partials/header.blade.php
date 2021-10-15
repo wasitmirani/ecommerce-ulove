@@ -9,6 +9,7 @@
 
         <link href="https://fonts.googleapis.com/css?family={{ urlencode(theme_option('font_text', 'Poppins')) }}:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
+
         <style>
             :root {
                 --font-text: {{ theme_option('font_text', 'Poppins') }}, sans-serif;
@@ -45,7 +46,7 @@
             $cantCloseBrowse = $openBrowse && $headerStyle == 'header-style-2';
         @endphp
     </head>
-    <body @if (BaseHelper::siteLanguageDirection() == 'rtl') dir="rtl" @endif class="@if (BaseHelper::siteLanguageDirection() == 'rtl') rtl @endif header_full_true wowy-template css_scrollbar lazy_icons btnt4_style_2 zoom_tp_2 css_scrollbar template-index wowy_toolbar_true hover_img2 swatch_style_rounded swatch_list_size_small label_style_rounded wrapper_full_width header_full_true header_sticky_true hide_scrolld_true des_header_3 h_banner_true top_bar_true prs_bordered_grid_1 search_pos_canvas lazyload @if (Theme::get('bodyClass')) {{ Theme::get('bodyClass') }} @endif">
+    <body @if (BaseHelper::siteLanguageDirection() == 'rtl') dir="rtl" @endif class="@if (BaseHelper::siteLanguageDirection() == 'rtl') rtl @endif header_full_true uluvmusic-template css_scrollbar lazy_icons btnt4_style_2 zoom_tp_2 css_scrollbar template-index uluvmusic_toolbar_true hover_img2 swatch_style_rounded swatch_list_size_small label_style_rounded wrapper_full_width header_full_true header_sticky_true hide_scrolld_true des_header_3 h_banner_true top_bar_true prs_bordered_grid_1 search_pos_canvas lazyload @if (Theme::get('bodyClass')) {{ Theme::get('bodyClass') }} @endif">
         {!! apply_filters(THEME_FRONT_BODY, null) !!}
         <div id="alert-container"></div>
         <header class="header-area header-height-2 {{ $headerStyle }}">
@@ -59,9 +60,9 @@
                                         <li><i class="fa fa-phone-alt mr-5"></i><a href="tel:{{ theme_option('hotline') }}">{{ theme_option('hotline') }}</a></li>
                                     @endif
 
-                                    @if (is_plugin_active('ecommerce'))
+                                    {{-- @if (is_plugin_active('ecommerce'))
                                         <li><i class="far fa-anchor mr-5"></i><a href="{{ route('public.orders.tracking') }}">{{ __(' Track Your Order') }}</a></li>
-                                    @endif
+                                    @endif --}}
                                 </ul>
                             </div>
                         </div>
@@ -135,7 +136,7 @@
                 $categoriesWith = array_merge(['slugable', 'children', 'children.slugable', 'icon'], (is_plugin_active('language-advanced') ? ['children.translations'] : []));
                 $categories = !is_plugin_active('ecommerce') ? [] : get_product_categories(['status' => \Botble\Base\Enums\BaseStatusEnum::PUBLISHED], $categoriesWith, [], true);
             @endphp
-              <div class="header-bottom header-bottom-bg-color sticky-bar gray-bg sticky-blue-bg">
+              <div class="header-bottom header-bottom-bg-color sticky-bar gray-bg sticky-blue-bg"     @if(request()->is('/')) style="background-color: transparent;" @endif>
                 <div class="container">
                     <div class="header-wrap header-space-between position-relative main-nav">
                         @if (theme_option('logo_light'))
@@ -234,13 +235,15 @@
                                 <div class="header-action-2">
                                     <div class="header-action-icon-2">
                                         <a href="{{ route('public.wishlist') }}" class="wishlist-count">
-                                            <img class="svgInject" alt="{{ __('Wishlist') }}" src="{{ Theme::asset()->url('images/icons/icon-heart.svg') }}">
+                                     <i class="fa fa-heart text-light" aria-hidden="true"></i>
+                                            {{-- <img class="svgInject" alt="{{ __('Wishlist') }}" src="{{ Theme::asset()->url('images/icons/icon-heart.svg') }}"> --}}
                                             <span class="pro-count blue">@if (auth('customer')->check())<span>{{ auth('customer')->user()->wishlist()->count() }}</span> @else <span>{{ Cart::instance('wishlist')->count() }}</span>@endif</span>
                                         </a>
                                     </div>
                                     <div class="header-action-icon-2">
                                         <a class="mini-cart-icon" href="{{ route('public.cart') }}">
-                                            <img alt="{{ __('Cart') }}" src="{{ Theme::asset()->url('images/icons/icon-cart.svg') }}">
+                                            <i class="fa fa-shopping-cart text-light"></i>
+                                            {{-- <img alt="{{ __('Cart') }}" src="{{ Theme::asset()->url('images/icons/icon-cart.svg') }}"> --}}
                                             <span class="pro-count blue">{{ Cart::instance('cart')->count() }}</span>
                                         </a>
                                         <div class="cart-dropdown-wrap cart-dropdown-hm2">
@@ -249,7 +252,8 @@
                                     </div>
                                     <div class="header-action-icon-2">
                                         <a href="{{ route('customer.login') }}">
-                                            <img alt="{{ __('Sign In') }}" src="{{ Theme::asset()->url('images/icons/icon-user.svg') }}">
+                                             <i class="fa fa-user text-light"></i>
+                                            {{-- <img alt="{{ __('Sign In') }}" src="{{ Theme::asset()->url('images/icons/icon-user.svg') }}"> --}}
                                         </a>
                                     </div>
                                 </div>
@@ -259,13 +263,13 @@
                                 <div class="header-action-2">
                                     <div class="header-action-icon-2">
                                         <a href="{{ route('public.wishlist') }}">
-                                            <img alt="wowy" src="{{ Theme::asset()->url('images/icons/icon-heart-white.svg') }}">
+                                            <img alt="uluvmusic" src="{{ Theme::asset()->url('images/icons/icon-heart-white.svg') }}">
                                             <span class="pro-count white">@if (auth('customer')->check())<span>{{ auth('customer')->user()->wishlist()->count() }}</span> @else <span>{{ Cart::instance('wishlist')->count() }}</span>@endif</span>
                                         </a>
                                     </div>
                                     <div class="header-action-icon-2">
                                         <a class="mini-cart-icon" href="{{ route('public.cart') }}">
-                                            <img alt="wowy" src="{{ Theme::asset()->url('images/icons/icon-cart-white.svg') }}">
+                                            <img alt="uluvmusic" src="{{ Theme::asset()->url('images/icons/icon-cart-white.svg') }}">
                                             <span class="pro-count white">{{ Cart::instance('cart')->count() }}</span>
                                         </a>
                                         <div class="cart-dropdown-wrap cart-dropdown-hm2">
@@ -274,7 +278,7 @@
                                     </div>
                                     <div class="header-action-icon-2">
                                         <a href="{{ route('customer.login') }}">
-                                            <img alt="wowy" src="{{ Theme::asset()->url('images/icons/icon-user-white.svg') }}">
+                                            <img alt="uluvmusic" src="{{ Theme::asset()->url('images/icons/icon-user-white.svg') }}">
                                         </a>
                                     </div>
                                     <div class="header-action-icon-2 d-block d-lg-none">
@@ -290,7 +294,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
+            <div class="header-middle header-middle-ptb-1 d-none d-lg-block"  @if(request()->is('/')!="/") style="background-color: black;" @endif>
                 <div class="container">
 
                     <div class="header-wrap header-space-between">
@@ -299,8 +303,9 @@
                                 <a href="{{ route('public.index') }}"><img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="{{ theme_option('site_title') }}"></a>
                             </div>
                         @endif
+                        @if(request()->is('/')!="/")
                         @if (is_plugin_active('ecommerce') )
-                            {{-- <div class="search-style-2">
+                            <div class="search-style-2">
                                 <form action="{{ route('public.products') }}" method="get">
                                     <select class="select-active" name="categories[]">
                                         <option value="">{{ __('All Categories') }}</option>
@@ -311,8 +316,9 @@
                                     <input type="text" name="q" placeholder="{{ __('Search for items…') }}" autocomplete="off">
                                     <button type="submit"> <i class="far fa-search"></i> </button>
                                 </form>
-                            </div> --}}
+                            </div>
 
+                        @endif
                         @endif
                     </div>
                 </div>

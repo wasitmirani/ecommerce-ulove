@@ -2,7 +2,7 @@
     "name": "Payment",
     "namespace": "Botble\\Payment\\",
     "provider": "Botble\\Payment\\Providers\\PaymentServiceProvider",
-    "author": "Botble Technologies",
+    "author": "",
     "url": "https://botble.com",
     "version": "1.1",
     "description": "Payment plugin"
