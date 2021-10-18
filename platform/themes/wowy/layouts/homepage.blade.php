@@ -24,54 +24,21 @@
         </div>
         <div class="banner-in">
           <div class="row">
+                @foreach(get_featured_product_categories(['limit' => 6, 'withCount' => ['products']]) as $category)
+                {{-- <li class="cat-item text-muted"><a href="{{ $category->url }}">{{ $category->name }}</a>({{ $category->products_count }})</li> --}}
             <div class="col-lg-2" data-aos="fade-right" data-aos-duration="3000">
-              <a href="#">
+              <a href="{{ $category->url }}">
                 <div class="img-box">
-                  <img src="assets/images/Rectangle 71.png" class="img-fluid" alt="">
-                  <h3>Blues</h3>
+                    {{-- @dd($category) --}}
+
+                  {{-- <img src="assets/images/Rectangle 71.png" class="img-fluid" alt=""> --}}
+                  <img src="{{RvMedia::getImageUrl($category->image, null, false, RvMedia::getDefaultImage())  }}" class="img-fluid" alt="{{ $category->name }}" />
+                  <h3>{{ $category->name }}</h3>
                 </div>
               </a>
             </div>
-            <div class="col-lg-2" data-aos="fade-right" data-aos-duration="2000">
-              <a href="#">
-                <div class="img-box">
-                  <img src="assets/images/Rectangle 6.png" class="img-fluid" alt="">
-                  <h3>Hip Hop</h3>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-2" data-aos="fade-right" data-aos-duration="1000">
-              <a href="#">
-                <div class="img-box">
-                  <img src="assets/images/Rectangle 7.png" class="img-fluid" alt="">
-                  <h3>jazz</h3>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-2" data-aos="fade-left" data-aos-duration="1000">
-              <a href="#">
-                <div class="img-box">
-                  <img src="assets/images/Rectangle 8.png" class="img-fluid" alt="">
-                  <h3>Classical</h3>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-2" data-aos="fade-left" data-aos-duration="2000">
-              <a href="#">
-                <div class="img-box">
-                  <img src="assets/images/Rectangle 9.png" class="img-fluid" alt="">
-                  <h3>Metal</h3>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-2" data-aos="fade-left" data-aos-duration="3000">
-              <a href="#">
-                <div class="img-box">
-                  <img src="assets/images/Rectangle 72.png" class="img-fluid" alt="">
-                  <h3>rock</h3>
-                </div>
-              </a>
-            </div>
+            @endforeach
+
           </div>
         </div>
       </div>
@@ -450,7 +417,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="sec4-btn" data-aos="zoom-in-up" data-aos-duration="2000">
-              <a href="#">View All Products</a>
+              <a href="{{url('/products')}}">View All Products</a>
             </div>
           </div>
         </div>

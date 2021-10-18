@@ -27,6 +27,7 @@ class PublicController extends Controller
     public function getView($key = null)
     {
         if (empty($key)) {
+          
             return $this->getIndex();
         }
 
@@ -63,6 +64,7 @@ class PublicController extends Controller
     public function getIndex()
     {
         if (defined('PAGE_MODULE_SCREEN_NAME')) {
+
             $homepageId = BaseHelper::getHomepageId();
             if ($homepageId) {
                 $slug = SlugHelper::getSlug(null, SlugHelper::getPrefix(Page::class), Page::class, $homepageId);
