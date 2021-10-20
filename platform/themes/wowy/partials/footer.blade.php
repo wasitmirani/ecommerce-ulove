@@ -1,6 +1,7 @@
     @if (is_plugin_active('newsletter'))
         {!! do_shortcode('[newsletter-form title="' . __('Sign up to Newsletter') . '" description="' . __('...and receive $25 coupon for first shopping.') . '"][/newsletter-form]') !!}
     @endif
+
      <footer class="main" style="color:white; background-color:black;">
         <section class="section-padding-60">
             <div class="container">
@@ -49,7 +50,44 @@
             </div>
         </div> --}}
     </footer>
-
+    {{-- <footer>
+      <div class="footer-up aos-init aos-animate" data-aos="fade" data-aos-duration="1000">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="assets/images/Group 20.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 dis-flex-end">
+              <ul class="footer-menu-1">
+                <li><a href="{{url('/')}}">Home</a></li>
+                <li><a href="#">Categories</a></li><li>
+                </li><li><a href="#">Contacts</a></li><li>
+                </li><li><a href="#">UMusic Members</a></li><li>
+                </li><li><a href="#">U Luv Music Publishing</a></li><li>
+              </li></ul>
+              <ul class="footer-menu-2">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-down">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p>{{} theme_option('copyright') }}</p>
+              <ul class="copyright-ul">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> --}}
     @if (theme_option('preloader_enabled', 'yes') == 'yes')
         <!-- Preloader Start -->
         <div id="preloader-active" >
