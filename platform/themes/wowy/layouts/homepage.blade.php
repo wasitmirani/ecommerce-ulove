@@ -1,5 +1,7 @@
 {!! Theme::partial('header') !!}
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('assets/css/responsive.css')}}" rel="stylesheet">
     <link href="{{asset('assets/slick-slider/slick/slick-theme.css')}}" rel="stylesheet">
@@ -103,6 +105,7 @@
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="Hip-Hop" role="tabpanel" aria-labelledby="Hip-Hop-tab">
                 <div class="row">
+
                   <div class="col-lg-3" data-aos="zoom-out-right" data-aos-duration="2000">
                     <div class="box-in">
                       <img src="assets/images/Rectangle 23.png" class="img-fluid" alt="">
@@ -163,6 +166,7 @@
                   </div>
                 </div>
               </div>
+              {{-- @dd() --}}
               <div class="tab-pane fade" id="jazz" role="tabpanel" aria-labelledby="jazz-tab">
                 <div class="row">
                   <div class="col-lg-3" data-aos="zoom-out-right" data-aos-duration="2000">
@@ -582,7 +586,18 @@
     </section>
 
 </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"
+integrity="sha512-Idr7xVNnMWCsgBQscTSCivBNWWH30oo/tzYORviOCrLKmBaRxRflm2miNhTFJNVmXvCtzgms5nlJF4az2hiGnA=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
 
+addToCard(id){
+    axios.post("/cart/add-to-cart").then((res)=>{
+
+    })
+}
+
+</script>
 {!! Theme::partial('footer') !!}
 
 

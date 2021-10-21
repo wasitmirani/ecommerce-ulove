@@ -2,7 +2,7 @@
         {!! do_shortcode('[newsletter-form title="' . __('Sign up to Newsletter') . '" description="' . __('...and receive $25 coupon for first shopping.') . '"][/newsletter-form]') !!}
     @endif
 
-     <footer class="main" style="color:white; background-color:black;">
+     {{-- <footer class="main" style="color:white; background-color:black;">
         <section class="section-padding-60">
             <div class="container">
                 <div class="row">
@@ -34,7 +34,7 @@
           </div>
         </div>
       </div>
-        {{-- <div class="container pb-20 wow fadeIn animated">
+        <div class="container pb-20 wow fadeIn animated">
             <div class="row">
                 <div class="col-12 mb-20">
                     <div class="footer-bottom"></div>
@@ -48,14 +48,14 @@
                     </p>
                 </div>
             </div>
-        </div> --}}
-    </footer>
-    {{-- <footer>
+        </div>
+    </footer> --}}
+    <footer>
       <div class="footer-up aos-init aos-animate" data-aos="fade" data-aos-duration="1000">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <img src="assets/images/Group 20.png" class="img-fluid" alt="">
+              <img src="{{asset('assets/images/Group 20.png')}}" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 dis-flex-end">
               <ul class="footer-menu-1">
@@ -78,7 +78,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <p>{{} theme_option('copyright') }}</p>
+              <p>{{ theme_option('copyright') }}</p>
               <ul class="copyright-ul">
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms &amp; Conditions</a></li>
@@ -87,7 +87,7 @@
           </div>
         </div>
       </div>
-    </footer> --}}
+    </footer>
     @if (theme_option('preloader_enabled', 'yes') == 'yes')
         <!-- Preloader Start -->
         <div id="preloader-active" >
