@@ -50,7 +50,11 @@
         {!! apply_filters(THEME_FRONT_BODY, null) !!}
         <div id="alert-container"></div>
         <header class="header-area header-height-2 {{ $headerStyle }}">
-            <div class="header-top header-top-ptb-1 d-none d-lg-block">
+            <div class="header-top header-top-ptb-1 d-none d-lg-block" @if(request()->url('/')!=url('')) style="
+                                background-color: #000000 !important;
+                                /* border-bottom: 1px solid #f2f2f2; */
+                                /* font-size: 13px; */
+                                padding: 7px 0;" @endif>
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-4">
