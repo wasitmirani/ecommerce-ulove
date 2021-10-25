@@ -60,9 +60,9 @@
                         <div class="col-xl-3 col-lg-4">
                             <div class="header-info">
                                 <ul>
-                                    @if (theme_option('hotline'))
+                                    {{-- @if (theme_option('hotline'))
                                         <li><i class="fa fa-phone-alt mr-5"></i><a href="tel:{{ theme_option('hotline') }}">{{ theme_option('hotline') }}</a></li>
-                                    @endif
+                                    @endif --}}
 
                                     {{-- @if (is_plugin_active('ecommerce'))
                                         <li><i class="far fa-anchor mr-5"></i><a href="{{ route('public.orders.tracking') }}">{{ __(' Track Your Order') }}</a></li>
@@ -126,7 +126,16 @@
                                                 @if (auth('customer')->check())
                                                     <li><a href="{{ route('customer.overview') }}">{{ auth('customer')->user()->name }}</a></li>
                                                 @else
-                                                    <li><a href="{{ route('customer.login') }}">{{ __('Log In / Sign Up') }}</a></li>
+                                                      <li class="nav-item" style="  padding: 0px 20px !important;
+    background: #ECBF14;
+    color: #000 !important;
+    font-weight: 500;
+    transition: all .5s ease;
+    border: 1px solid #FFD01C;">
+                                                <a class="nav-link text-dark" href="{{ route('customer.login') }}">Log In</a>
+                                                </li>
+
+                                                    {{-- <li><a href="{{ route('customer.login') }}">{{ __('Log In / Sign Up') }}</a></li> --}}
                                                 @endif
                                             @endif
                                         </ul>
@@ -142,14 +151,19 @@
             @endphp
               <div class="header-bottom header-bottom-bg-color sticky-bar gray-bg sticky-blue-bg"     @if(request()->is('/')) style="background-color: transparent;" @endif>
                 <div class="container">
-                    <div class="header-wrap header-space-between position-relative main-nav">
-                        @if (theme_option('logo_light'))
+                    <div class="header-wrap header-space-between  position-relative main-nav">
+                        {{-- @if (theme_option('logo_light'))
                             <div class="logo logo-width-1 d-block d-lg-none">
                                 <a href="{{ route('public.index') }}"><img src="{{ RvMedia::getImageUrl(theme_option('logo_light')) }}" alt="{{ theme_option('site_title') }}"></a>
                             </div>
-                        @endif
+                        @endif --}}
                         <div class="main-categori-wrap d-none d-lg-block">
-                            <a class="categori-button-active @if ($openBrowse) open @endif @if ($cantCloseBrowse) cant-close @endif" href="#">
+                             @if (theme_option('logo'))
+                            <div class="logo logo-width-1">
+                                <a href="{{ route('public.index') }}"><img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="{{ theme_option('site_title') }}"></a>
+                            </div>
+                        @endif
+                            {{-- <a class="categori-button-active @if ($openBrowse) open @endif @if ($cantCloseBrowse) cant-close @endif" href="#">
                                 <span class="fa fa-list"></span> {{ __('Browse Categories') }} <i class="down far fa-chevron-down"></i> <i class="up far fa-chevron-up"></i>
                             </a>
                             <div class="categori-dropdown-wrap categori-dropdown-active-large @if ($openBrowse) default-open open @endif">
@@ -217,23 +231,24 @@
                                 @if (count($categories) > 10)
                                     <div class="more_categories">{{ __('Show more...') }}</div>
                                 @endif
-                            </div>
+                            </div> --}}
                         </div>
-                        <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block main-menu-light-white hover-boder hover-boder-white">
+                        <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block main-menu-light-white hover-boder hover-boder-white" style="margin-left: -387px;">
                             <nav>
                                 {!!
                                     Menu::renderMenuLocation('main-menu', [
                                         'view' => 'main-menu',
                                     ])
                                 !!}
+
                             </nav>
                         </div>
 
-                        @if (theme_option('hotline'))
+                        {{-- @if (theme_option('hotline'))
                             <div class="hotline d-none d-lg-block">
                                 <p><i class="fa fa-phone-alt"></i><span>{{ __('Hotline') }}</span> {{ theme_option('hotline') }}</p>
                             </div>
-                        @endif
+                        @endif --}}
 
                     <div class="header-action-right">
                                 <div class="header-action-2">
@@ -302,11 +317,11 @@
                 <div class="container">
 
                     <div class="header-wrap header-space-between">
-                        @if (theme_option('logo'))
+                        {{-- @if (theme_option('logo'))
                             <div class="logo logo-width-1">
                                 <a href="{{ route('public.index') }}"><img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="{{ theme_option('site_title') }}"></a>
                             </div>
-                        @endif
+                        @endif --}}
                         @if(request()->is('/')!="/")
                         @if (is_plugin_active('ecommerce') )
                             <div class="search-style-2">
@@ -401,6 +416,8 @@
                                 @if (auth('customer')->check())
                                     <a href="{{ route('customer.overview') }}">{{ auth('customer')->user()->name }}</a>
                                 @else
+
+
                                     <a href="{{ route('customer.login') }}">{{ __('Log In / Sign Up') }}</a>
                                 @endif
                             </div>
