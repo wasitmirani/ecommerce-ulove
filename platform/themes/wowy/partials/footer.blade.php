@@ -1,5 +1,5 @@
     @if (is_plugin_active('newsletter'))
-        {!! do_shortcode('[newsletter-form title="' . __('Sign up to Newsletter') . '" description="' . __('...and receive $25 coupon for first shopping.') . '"][/newsletter-form]') !!}
+        {!! do_shortcode('[newsletter-form title="' . __('Sign up to Newsletter') . '" description="' . __('') . '"][/newsletter-form]') !!}
     @endif
 
      {{-- <footer class="main" style="color:white; background-color:black;">
