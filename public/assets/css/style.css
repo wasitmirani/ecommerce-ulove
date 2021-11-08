@@ -59,13 +59,18 @@ ul.navbar-nav li a:hover {
     color: #ecbf14 !important;
 }
 .banner {
-    background: url(../../assets/images/Group118.png);
+    background: url(../../assets/images/home-banner.png);
     /* position: absolute; */
     top: 0;
     z-index: -1;
     width: 100%;
     height: 1080px;
     padding-top: 270px;
+}
+.banner .corner{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .banner h2 {
     font-size: 46px;
@@ -201,7 +206,7 @@ section.section-2 p {
 
 section.section-3 {
     height: 335px;
-    background: url(../../assets/images/Group116.png);
+    background: url(../../assets/images/banner_portaltohell.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 60%;
@@ -215,18 +220,23 @@ section.section-3 h2 {
     font-size: 54px;
     font-weight: 800;
     line-height: 46px;
-    color: #000;
+    color: #fff;
     padding-bottom: 10px;
 }
 
 section.section-3 h3 {
     font-size: 24px;
-    color: #272626;
+    color: #fff;
     font-weight: 300;
     line-height: 19px;
     letter-spacing: 1px;
 }
-
+section.section-3 h3 a{
+    color:unset;
+}
+section.section-3 h3 a:hover{
+    color: #FFD01C;
+}
 .section-4 {
     background: #000;
     padding: 100px 0 !important;

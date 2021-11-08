@@ -54,10 +54,10 @@
       <div class="footer-up aos-init aos-animate" data-aos="fade" data-aos-duration="1000">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-5">
               <img src="{{asset('assets/images/Group 20.png')}}" class="img-fluid" alt="">
             </div>
-            <div class="col-lg-6 dis-flex-end">
+            <div class="col-lg-7 dis-flex-end">
               <ul class="footer-menu-1">
                 <li><a href="{{url('/')}}">Home</a></li>
                 <li><a href="#">Categories</a></li><li>

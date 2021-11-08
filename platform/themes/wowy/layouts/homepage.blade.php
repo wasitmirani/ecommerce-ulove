@@ -44,6 +44,7 @@
           </div>
         </div>
       </div>
+      <div class="corner"><a href="#"><img src="assets/images/corner.png" class="img-fluid" alt=""></a></div>
     </section>
     <section class="section-2">
       <div class="container">
@@ -69,7 +70,7 @@
         <div class="row">
           <div class="col-lg-12 text-center sec-3-in">
             <h2>Portal to Hell</h2>
-            <h3>For Metalheads Only</h3>
+            <h3><a href="#">For Metalheads Only</a></h3>
           </div>
         </div>
       </div>
