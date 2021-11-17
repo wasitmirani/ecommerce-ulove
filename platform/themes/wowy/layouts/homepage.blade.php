@@ -69,8 +69,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center sec-3-in">
-            <h2>Portal to Hell</h2>
-            <h3><a href="#">For Metalheads Only</a></h3>
+            {{-- <h2>Portal to Hell</h2> --}}
+            {{-- <h3><a href="#">For Metalheads Only</a></h3> --}}
           </div>
         </div>
       </div>

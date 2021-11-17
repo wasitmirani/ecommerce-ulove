@@ -107,10 +107,12 @@
                                 @if (EcommerceHelper::isQuickBuyButtonEnabled())
                                     <button class="button button-buy-now @if ($product->isOutOfStock()) btn-disabled @endif" type="submit" name="checkout" @if ($product->isOutOfStock()) disabled @endif>{{ __('Buy Now') }}</button>
                                 @endif
-                            @endif
+                                    <button class="button mt-3 button-buy-now @if ($product->isOutOfStock()) btn-disabled @endif" type="submit" name="checkout" @if ($product->isOutOfStock()) disabled @endif>{{ __('Notify Me') }}</button>
+                            <button class="button mt-3  button-buy-now @if ($product->isOutOfStock()) btn-disabled @endif" type="submit" name="checkout" @if ($product->isOutOfStock()) disabled @endif>{{ __('Back Order') }}</button>
+                                    @endif
 
-                            <a aria-label="{{ __('Add To Wishlist') }}" class="action-btn hover-up js-add-to-wishlist-button" data-url="{{ route('public.wishlist.add', $product->id) }}" href="#"><i class="far fa-heart"></i></a>
-                            <a aria-label="{{ __('Add To Compare') }}" href="#" class="action-btn hover-up js-add-to-compare-button" data-url="{{ route('public.compare.add', $product->id) }}"><i class="far fa-exchange-alt"></i></a>
+                            <a aria-label="{{ __('Add To Wishlist') }}" class="action-btn mt-3 hover-up js-add-to-wishlist-button" data-url="{{ route('public.wishlist.add', $product->id) }}" href="#"><i class="far fa-heart"></i></a>
+                            <a aria-label="{{ __('Add To Compare') }}" href="#" class="action-btn mt-3 hover-up js-add-to-compare-button" data-url="{{ route('public.compare.add', $product->id) }}"><i class="far fa-exchange-alt"></i></a>
                         </div>
                     </div>
                 </form>
