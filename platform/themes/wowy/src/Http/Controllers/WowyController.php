@@ -119,6 +119,10 @@ class WowyController extends PublicController
 
         return $response->setData(ProductCategoryResource::collection($categories));
     }
+    public function collectorCorner(){
+
+        return view('theme.wowy::layouts.collectorcorner');
+    }
 
     /**
      * @param Request $request

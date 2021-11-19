@@ -44,6 +44,7 @@ Route::group(['namespace' => 'Theme\Wowy\Http\Controllers', 'middleware' => ['we
 
         Route::get('/', 'WowyController@getIndex')
             ->name('public.index');
+        
 
         Route::get('sitemap.xml', 'WowyController@getSiteMap')
             ->name('public.sitemap');
@@ -53,3 +54,4 @@ Route::group(['namespace' => 'Theme\Wowy\Http\Controllers', 'middleware' => ['we
 
     });
 });
+

@@ -44,7 +44,7 @@
           </div>
         </div>
       </div>
-      <div class="corner"><a href="#"><img src="assets/images/corner.png" class="img-fluid" alt=""></a></div>
+      <div class="corner"><a href="{{url('/collector-corner')}}"><img src="assets/images/corner.png" class="img-fluid" alt=""></a></div>
     </section>
     <section class="section-2">
       <div class="container">
