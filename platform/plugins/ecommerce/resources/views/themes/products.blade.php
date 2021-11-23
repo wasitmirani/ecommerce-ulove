@@ -3,7 +3,9 @@
         <div class="row">
 
             <div class="row product-list-item">
+                
                 @if ($products->count() > 0)
+                
                     @foreach ($products as $product)
                         <li>
                             <div class="product-item product-loop">

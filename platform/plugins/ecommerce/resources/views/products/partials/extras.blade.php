@@ -41,12 +41,12 @@
                         <input type="text" class="next-input textbox-advancesearch" placeholder="{{ trans('plugins/ecommerce::products.search_products') }}" data-target="{{ $dataUrl }}">
                     </div>
                     <div class="panel panel-default">
-
+                       
                     </div>
                 </div>
                 @include('plugins/ecommerce::products.partials.selected-products-list', ['products' => $product ? $product->upSales : collect([]), 'includeVariation' => false])
             </div>
-
+      
             <hr>
             <div class="form-group">
                 <label class="control-label">{{ trans('plugins/ecommerce::products.grouped_products') }}</label>
@@ -59,6 +59,7 @@
 
                     </div>
                 </div>
+                 
                 @include('plugins/ecommerce::products.partials.selected-products-list', ['products' => $product ? $product->groupedProduct : collect([]), 'includeVariation' => false])
             </div>
         @endif

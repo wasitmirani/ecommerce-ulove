@@ -286,7 +286,7 @@
                         <td>(nullable|bool|default:false)</td>
                     </tr>
                     <tr>
-                        <th scope="row">Stock status</th>
+                        <th scope="row">    Stock status</th>
                         <td>(nullable|enum:{{ implode(',', Botble\Ecommerce\Enums\StockStatusEnum::values()) }}|default:{{ Botble\Ecommerce\Enums\StockStatusEnum::IN_STOCK }})</td>
                     </tr>
                     <tr>

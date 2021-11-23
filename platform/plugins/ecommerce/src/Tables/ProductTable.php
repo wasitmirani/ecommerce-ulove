@@ -84,7 +84,10 @@ class ProductTable extends TableAbstract
             ->editColumn('quantity', function ($item) {
                 return $item->with_storehouse_management ? $item->quantity : '&#8734;';
             })
-            ->editColumn('sku', function ($item) {
+             ->editColumn('config', function ($item) {
+                return "CD";
+            })
+            ->editColumn('UPC', function ($item) {
                 return $item->sku ?: '&mdash;';
             })
             ->editColumn('order', function ($item) {
@@ -175,7 +178,11 @@ class ProductTable extends TableAbstract
                 'class' => 'text-left',
             ],
             'sku'          => [
-                'title' => trans('plugins/ecommerce::products.sku'),
+                'title' => 'UPC',
+                'class' => 'text-left',
+            ],
+            'config' => [
+                'title' => 'config',
                 'class' => 'text-left',
             ],
             'order'        => [

@@ -1,5 +1,6 @@
 @extends('core/base::layouts.master')
 @section('content')
+        
     <div class="flexbox-grid">
         <div class="flexbox-content">
             <div class="body">
