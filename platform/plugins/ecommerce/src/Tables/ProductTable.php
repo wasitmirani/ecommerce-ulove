@@ -188,6 +188,7 @@ class ProductTable extends TableAbstract
             'order'        => [
                 'title' => trans('core/base::tables.order'),
                 'width' => '50px',
+                
                 'class' => 'text-center',
             ],
             'created_at'   => [
